@@ -1,0 +1,124 @@
+.carosel-main-review {
+    overflow: hidden;
+    background-color: black; /* Set your desired background color */
+    position: relative;
+    max-width: 500px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  
+  .carousel-main {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-main div {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .carousel-main p {
+    color: white;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .review-username {
+    color: #ffaa00;
+    margin: 10px 0;
+    font-weight: 600;
+  }
+  
+  .carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-controls img {
+    cursor: pointer;
+  }
+  
+  /* my  */
+  .main-reviews {
+    background-color: #020202;
+    padding: 0 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-reviews .quote {
+    width: 120px;
+    height: 70px;
+    position: relative;
+    top: 60px;
+  }
+  
+  .main-reviews .quote img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .main-reviews .review-text {
+    font-size: 80px;
+    color: #fff;
+    font-family: "Playball" !important;
+    margin: 0;
+  }
+  
+  .CustomLeftArrow {
+    position: absolute !important;
+    height: 50px !important;
+    max-width: 100%;
+    left: 44.5%;
+    top: 64px;
+    text-align: center;
+    z-index: 999999;
+  }
+  
+  .customRightArrow {
+    position: absolute !important;
+    height: 50px !important;
+    width: 50px !important;
+    top: 64px;
+    z-index: 999999;
+  }
+  
+  .parent-arrowright {
+    width: 100%;
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+  }
+  
+  .parent-arrow-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  
+  @media (max-width: 1200px) {
+    .CustomLeftArrow,
+    .customRightArrow {
+      display: none !important;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .review-text {
+      padding-bottom: 30px;
+    }
+    .SlidesReview {
+      padding-bottom: 40px;
+    }
+    .main-reviews {
+      padding: 0 20px;
+    }
+  
+    .review-text {
+      font-size: 33px !important;
+    }
+  }
